@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Projects</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .tab-content {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <h1 class="text-center">VIT Projects: Relevance of SDP, EDI, DT, and Course Projects</h1>
+
+        <!-- Nav pills -->
+        <ul class="nav nav-pills justify-content-center" id="projectTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="sdp-tab" data-bs-toggle="pill" href="#sdp" role="tab" aria-controls="sdp" aria-selected="true">SDP</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="edi-tab" data-bs-toggle="pill" href="#edi" role="tab" aria-controls="edi" aria-selected="false">EDI</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="dt-tab" data-bs-toggle="pill" href="#dt" role="tab" aria-controls="dt" aria-selected="false">DT</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="course-tab" data-bs-toggle="pill" href="#course" role="tab" aria-controls="course" aria-selected="false">Course Projects</a>
+            </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content mt-3" id="projectTabsContent">
+            <div class="tab-pane fade show active" id="sdp" role="tabpanel" aria-labelledby="sdp-tab">
+                <h3>Software Development Project (SDP)</h3>
+                <p>The Software Development Project (SDP) at VIT is a culmination of the theoretical knowledge gained during the course. Students are expected to work on real-world problems, building applications or systems that address specific needs in industries or businesses. It helps develop technical and soft skills, such as teamwork, time management, and problem-solving.</p>
+            </div>
+            <div class="tab-pane fade" id="edi" role="tabpanel" aria-labelledby="edi-tab">
+                <h3>Entrepreneurship Development Institute (EDI)</h3>
+                <p>EDI focuses on fostering entrepreneurial skills among students, guiding them to ideate and launch start-ups. Through this program, students get a platform to understand business concepts, market research, business planning, and pitching ideas to investors. It's highly relevant for students aspiring to become entrepreneurs.</p>
+            </div>
+            <div class="tab-pane fade" id="dt" role="tabpanel" aria-labelledby="dt-tab">
+                <h3>Design Thinking (DT)</h3>
+                <p>Design Thinking is a human-centered approach to problem-solving. This methodology enables students to approach challenges creatively, ensuring they are addressed with innovative solutions. It is extremely useful in every field, from engineering to business, and enhances the students' ability to empathize with users and create solutions that truly meet their needs.</p>
+            </div>
+            <div class="tab-pane fade" id="course" role="tabpanel" aria-labelledby="course-tab">
+                <h3>Course Projects</h3>
+                <p>Course Projects at VIT are designed to help students apply theoretical concepts to practical scenarios. They provide hands-on experience in various areas, such as software development, hardware systems, business analytics, and more. These projects help students understand the real-world application of their academic knowledge and prepare them for industry roles.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // jQuery for extra interaction, like active state toggle, if needed
+        $('#projectTabs a').on('click', function (e) {
+            $(this).tab('show');
+        });
+    </script>
+</body>
+</html>

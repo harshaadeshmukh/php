@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Improved Footer Styles */
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            border-radius: 10px;
+        }
+        
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .col-md-6 {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="/api/placeholder/400/320" type="video/mp4">
+    </video>
+
+    <div class="container content">
+        <header class="text-center mb-5">
+            <h1>John Doe</h1>
+            <p>Software Developer</p>
+        </header>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section">
+                    <h2>Education</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <h5>Bachelor of Technology in Computer Science</h5>
+                            <p>VIT University, 2020-2024</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>JavaScript, React, Node.js</li>
+                        <li>Python, Java, Spring Boot</li>
+                        <li>HTML5, CSS3, Bootstrap</li>
+                        <li>MySQL, MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="section">
+                    <h2>Work Experience</h2>
+                    <div class="mb-4">
+                        <h5>Software Developer Intern</h5>
+                        <p>Tech Solutions Inc., Summer 2023</p>
+                        <ul>
+                            <li>Developed responsive web applications</li>
+                            <li>Collaborated with senior developers</li>
+                            <li>Implemented new features using React</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li>
+                            <h5>E-Commerce Platform</h5>
+                            <p>Built using MERN stack with payment integration</p>
+                        </li>
+                        <li>
+                            <h5>Student Management System</h5>
+                            <p>Developed using Spring Boot and MySQL</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Improved Footer Section -->
+        <footer class="text-center mt-5">
+            <p>Contact: <a href="mailto:john.doe@email.com">john.doe@email.com</a> | Phone: (123) 456-7890</p>
+            <div class="social-icons">
+                <a href="#" class="fab fa-facebook" target="_blank">Facebook</a>
+                <a href="#" class="fab fa-linkedin" target="_blank">LinkedIn</a>
+                <a href="#" class="fab fa-github" target="_blank">GitHub</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome -->
+</body>
+</html>
